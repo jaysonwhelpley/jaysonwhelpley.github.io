@@ -1,2 +1,2 @@
-# General
-.DS_Store
+*.DS_store
+.DS_store
