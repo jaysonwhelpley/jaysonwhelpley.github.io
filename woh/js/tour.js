@@ -6,6 +6,7 @@
   var muted = false
   var duration
   var progress
+  var slug
 
   audio_bed = new Howl({
     src: ['audio/beds/bed1.mp3']
@@ -138,11 +139,6 @@
 
   $(document).ready(function() {
 
-    // Trasnform Loader
-    // svg_width = $('#loader #mount-jaysonwhelpley-GradientStrokeEminate').width()
-    // screen_width = screen.availWidth
-    // transform_scale = screen_width/svg_width
-    // $('#loader #mount-jaysonwhelpley-GradientStrokeEminate').css('transform','scale(0.3').css('transform-origin','0% 0% 0px')
     $('#loader').fadeIn(500);
 
     $(function() {
@@ -163,7 +159,7 @@
         $('body').append(html);
 
         $('.mis_link').each(function() {
-          let slug = $(this).attr('id').split('_link').join('')
+          slug = $(this).attr('id').split('_link').join('')
 
           eval(slug+"_audio= new Howl({src:['audio/stories/"+slug+".mp3'],onend: function(){setTimeout(audio_bed.fade(1.0,0.0,6000),3000);}})")
 
@@ -189,7 +185,7 @@
         $('body').append(html);
 
         $('.mir_link').each(function() {
-          let slug = $(this).attr('id').split('_link').join('')
+          slug = $(this).attr('id').split('_link').join('')
 
           eval(slug+"_audio= new Howl({src:['audio/stories/"+slug+".mp3'],onend: function(){setTimeout(audio_bed.fade(1.0,0.0,6000),3000);}})")
         });
@@ -292,6 +288,7 @@
 
     function missionaries_in() {
       $("#missionaries").fadeIn(speed)
+      slug = null
       scrollReset()
       localStorage.section = 'missionaries'
     }
@@ -300,6 +297,7 @@
 
     function miracles_in() {
       $("#miracles").fadeIn(speed)
+      slug = null
       scrollReset()
       localStorage.section = 'miracles'
     }
@@ -379,6 +377,7 @@
 
     $('body').on('click', '.detail .menu_button', function(event) {
       let destination = localStorage.section
+      slug = null
       Howler.stop()
       $(this).parents('.container').fadeOut(speed*1,function(){
         $(`#${destination}`).fadeIn(speed, function() {
@@ -390,6 +389,7 @@
 
     $('body').on('click', '.home_button', function(event) {
       Howler.stop()
+      slug = null
       $(this).parents('.container').fadeOut(speed*1,function(){
         $(`#index`).fadeIn(speed, function() {
         });
