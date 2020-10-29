@@ -26,7 +26,7 @@
   width      : 50vw;
   /* max-width  : 50vw; */
   margin     : 0 auto;
-  /* padding    : 0 20px; */
+  min-height: 100vh;
 }
 
 .column,
@@ -198,7 +198,7 @@ html {
 
 body {
   color            : #fff;
-  background-color : #222;
+  /* background-color : #222; */
   font-family      : "Apercu",
                      "Lato",
                      "Droid Sans",
@@ -345,15 +345,15 @@ dl dd.name {
 }
 
 div.avatar {
-  padding-bottom : 3vw;
+  padding-bottom : 2vh;
   text-align    : center;
   position      : sticky;
   top: 0;
 }
 
 .detail div.avatar img {
-  width         : 33vw;
-  border-width  : 6px;
+  width         : 15vh;
+  border-width  : .5vh;
   border-style  : solid;
   border-color  : transparent;
 }
@@ -405,7 +405,7 @@ body.detail .center-view {
   z-index : 1;
   left    : 38%;
   margin  : 0 auto;
-  background: #222;
+  background: transparent;
   padding-top: 5vh;
   position: sticky;
   top: 0vh;
@@ -420,7 +420,11 @@ body.detail .center-view {
 }
 
 .detail-content.main-content {
-  min-height : 50vh;
+    min-height: 50vh;
+    position: sticky;
+    /* top: 60vh; */
+    overflow-y: scroll;
+    height: 62.55vh;
 }
 
 .detail-content p {
@@ -442,7 +446,7 @@ body.detail .center-view {
 }
 
 .header-content .meta {
-  margin-bottom  : 1vh;
+  margin-bottom  : 0;
   padding-bottom : 1vh;
   border-bottom  : 1px solid;
   font-family    : "Apercu",
@@ -469,13 +473,17 @@ sup {
 .ico-volume-on {}
 
 .bottom-logo {
-  padding: 5vw 0 7.5vw;
+  position: sticky;
+  bottom: 0px;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
   margin: 0 auto;
   text-align: center;
+  border-top: 1px #fff solid;
 }
 
 .bottom-logo img {
-  width: 5vw
+  width: 3vh
 }
 
 /* Buttons –––––––––––––––––––––––––––––––––––––––––––––––––– */

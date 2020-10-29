@@ -66,9 +66,9 @@
   <div id="overlay"></div>
 
 <!-- VIDEO BG -->
-  <!-- <video id="layer1" playsinline autoplay muted loop>
+  <video id="layer1" playsinline autoplay muted loop>
     <source src="videos/test1.mp4" type="video/mp4" id='layer1'>
-  </video> -->
+  </video>
 
     <!-- Index Page
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -153,14 +153,16 @@
       </div>
 
         <div class="detail-content main-content">
+          <div class="scroller">
           {{#paragraphs}}
             <p>{{.}}</p>
           {{/paragraphs}}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bottom-logo">
-      <img src="images/logo-jfp.png" alt="Jesus Film Project">
+      <div class="bottom-logo">
+        <img src="images/logo-jfp.png" alt="Jesus Film Project">
+      </div>
     </div>
     <audio id="story" >
       <source src="audio/stories/{{slug}}.mp3" type="audio/mpeg">
@@ -178,25 +180,28 @@
     <div class="row">
       <div class="center-view">
         <div class="detail-header">
-        <div class="avatar">
-          <img src="images/miracles/{{slug}}.png" alt="avatar" >
+          <div class="avatar">
+            <img src="images/miracles/{{slug}}.png" alt="avatar" >
+            </div>
+          <div class="header-content">
+            <h1 class="name">{{title}}</h1>
+            <p class="meta">{{location}}</p>
           </div>
-        <div class="header-content">
-          <h1 class="name">{{title}}</h1>
-          <p class="meta">{{location}}</p>
-        </div>
 
-      </div>
+        </div>
         <div class="detail-content main-content">
+          <div class="scroller">
           {{#paragraphs}}
             <p>{{.}}</p>
           {{/paragraphs}}
+          </div>
+        </div>
+        <div class="bottom-logo">
+          <img src="images/logo-jfp.png" alt="Jesus Film Project">
         </div>
       </div>
     </div>
-    <div class="bottom-logo">
-      <img src="images/logo-jfp.png" alt="Jesus Film Project">
-    </div>
+
     <audio id="story" >
       <source src="audio/stories/{{slug}}.mp3" type="audio/mpeg">
     </audio>

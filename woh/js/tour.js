@@ -100,7 +100,8 @@
   }
 
   function scrollStart(anim_duration) {
-    $("html, body").stop().animate({ scrollTop: $(document).height() - $(window).height() }, anim_duration, 'linear');
+    // $('.detail-content:visible').animate({scrollTop: $('.scroller:visible').position().top}, 4000, 'linear')
+    $('.detail-content:visible').animate({scrollTop: ($('.scroller:visible').height() - $('.detail-content:visible').height() + 83)}, anim_duration, 'linear');
   }
 
   function scrollReset(slug) {
@@ -275,7 +276,7 @@
     });
 
     $('.home_button').click(function(event) {
-      $('.container').fadeOut('slow/400/fast', function() {
+      $('.container').fadeOut(speed*2, function() {
         goto_home()
         pause_css()
       });
