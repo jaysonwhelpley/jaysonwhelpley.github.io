@@ -1,0 +1,303 @@
+{
+    "sections": [{
+        "sectionname": "Cinema Classics",
+        "sectionid": "cinemaclassics",
+        "img" : "img/ultimateNachos.jpg",
+        "alt" : "Nachos never disappoint.",
+        "caption" : "Nachos never disappoint.",
+        "items": [{
+            "name": "Mozzarella Sticks",
+            "price": "$7.75",
+            "description": "Crispy breaded mozzarella cheese served with marinara."
+
+        }, {
+            "name": "Combo Platter",
+            "price": "$11.75",
+            "description": "Chicken Tenders, Mozzarella Sticks and Fries served with honey mustard and marinara."
+
+        }, {
+            "name": "Artichoke Spinach Dip",
+            "price": "$10.50",
+            "description": "A creamy blend of three cheeses, secret spices, artichoke hearts and spinach, served with tortilla chips.",
+            "extra": "Add celery sticks $2.00."
+
+        }, {
+            "name": "Ultimate Nachos",
+            "price": "$11.75",
+            "description": "Tortilla chips topped with meaty homemade chili, zesty cheese sauce, lettuce and tomatoes, served with sour cream."
+
+        }, {
+            "name": "Chicken Tenders & Fries",
+            "price": "$12.75",
+            "description": "Home style breaded chicken tender fillets and fries, served with honey mustard."
+
+        }, {
+            "name": "Onion Rings",
+            "price": "$7.75",
+            "description": "Golden fried onion rings served with boom boom sauce."
+
+        }, {
+            "name": "House Fries",
+            "price": "$6.50",
+            "description": "Basket of crispy fries."
+
+        }, {
+            "name": "Crispy Tortilla Chips",
+            "price": "$7.50",
+            "description": "Served with your choice of zesty cheese sauce or salsa."
+
+        }, {
+            "name": "Cheese Fries",
+            "price": "$8.75",
+            "description": "Crispy fries drizzled with our zesty cheese sauce."
+
+        }, {
+            "name": "Freshly Popped Popcorn",
+            "price": "$6.00",
+            "description": "With or without butter."
+
+        }, {
+            "name": "Chili Cheese Fries",
+            "price": "$10.75",
+            "description": "Crispy fries layered with meaty homemade chili and our zesty cheese sauce."
+
+        }, {
+            "name": "Mini Beef Nachos",
+            "price": "$8.50",
+            "description": "Single version of our ultimate nachos"
+
+        }]
+    }, {
+        "sectionname": "Wings",
+        "sectionid": "wings",
+        "sectionx1": "Choice of Mild, Hot, Teriyaki, or BBQ",
+        "sectionx2": "Served with celery, and blue cheese or ranch dressing.",
+        "img" : "img/wings.jpg",
+        "alt" : "A generous half-order of wings.",
+        "caption" : "A generous half-order of wings.",
+        "items": [{
+            "name": "Full Order",
+            "price": "$18.75"
+        }, {
+            "name": "Half Order",
+            "price": "$10.75"
+        }, {
+            "img" : "img/wings.jpg"
+          }]
+    }, {
+        "sectionname": "Salads",
+        "sectionid": "salads",
+        "sectionx1": "Dressings: Honey Mustard, Lite Ranch, Balsamic Vinaigrette, Creamy Italian, or Bleu Cheese",
+        "sectionx2": "Add grilled chicken or tuna to any salad. - $3.50",
+        "img" : "img/greekSalad.jpg",
+        "alt" : "Our freshest Greek salad.",
+        "caption" : "Our freshest Greek salad.",
+        "items": [{
+            "name": "Greek",
+            "price": "$11.50",
+            "description": "Tomato, cucumber, onion, pepperoncini, Greek olives, and feta cheese on a bed of mixed greens.",
+            "img" : "img/greekSalad.jpg"
+        }, {
+            "name": "Side",
+            "price": "$4.50",
+            "description": "Mixed greens, tomato, cucumber, and pepperoncini."
+
+        }, {
+            "name": "Cinema Classic",
+            "price": "$12.50",
+            "description": "Chopped mixed greens. Topped with cucumber, tomato, onion, bleu cheese crumbles, grilled chicken, bacon, and hard boiled egg."
+
+        }]
+    }, {
+        "sectionname": "House Specials",
+        "sectionid": "housespecials",
+        "sectionx1": "Served with fries.",
+        "sectionx2": "Substitute Onion Rings or a Side Salad: $3.00",
+        "sectionx3": "Add Cheddar, Mozzarella or Bacon: $1.00",
+        "img" : "img/burger.jpg",
+        "alt" : "A mouthwatering All American Burger",
+        "caption" : "A mouthwatering All American Burger",
+        "items": [{
+            "name": "All American Burger",
+            "price": "$12.00",
+            "description": "Juicy ground beef patty served on a brioche bun with lettuce, tomato and onion."
+        }, {
+            "name": "Tuna Melt Sub",
+            "price": "$10.00",
+            "description": "Creamy tuna, tomatoes and mozzarella cheese melted and topped with lettuce."
+        }, {
+            "name": "Grilled Chicken",
+            "price": "$12.00",
+            "description": "Grilled chicken breast with lettuce and tomato."
+        }, {
+            "name": "Fish & Chips",
+            "price": "$12.75",
+            "description": "Beer battered, moist, flaky white cod served with crispy fries and tartar or cocktail sauce."
+        }, {
+            "name": "Toasted Italian Sub",
+            "price": "$10.00",
+            "description": "Ham, salami, capicola ham and mozzarella cheese with Italian dressing, onions, pickles, tomatoes and lettuce."
+        }]
+    }, {
+        "sectionname": "Pizza",
+        "sectionid": "pizza",
+        "sectionx1": "Choose your Toppings: $2.00 each.",
+        "sectionx2": "Pepperoni, Italian Sausage, Mushrooms, Onion, Tomato, Banana Pepper, Bacon, Jalapenos, extra Cheese.",
+        "img" : "img/pizza.jpg",
+        "alt" : "A perfect split-topping pizza.",
+        "caption" : "A perfect split-topping pizza.",
+        "items": [{
+            "name": "12\" Traditional",
+            "price": "$13.50"
+        }, {
+            "name": "14\" Flatbread",
+            "price": "$14.50"
+        }]
+    }, {
+        "sectionname": "Kid's Menu",
+        "sectionid": "kids",
+        "img" : "img/chickenTenders.jpg",
+        "alt" : "Perfectly done chicken strips.",
+        "caption" : "Perfectly done chicken strips.",
+        "items": [{
+            "name": "Chicken Strips and Fries",
+            "price": "$9.50",
+            "description": ""
+        }, {
+            "name": "Jr. Burger and Fries",
+            "price": "$9.50",
+            "description": ""
+        }, {
+            "name": "7\" Cheese or Pepperoni Pizza",
+            "price": "$9.50",
+            "description": ""
+        }, {
+            "name": "Jr. Combo Pack",
+            "price": "$7.50",
+            "description": "Popcorn, soft drink, choice of candy or vanilla ice cream."
+        }, {
+            "name": "Vanilla Ice Cream Cup",
+            "price": "$1.50",
+            "description": ""
+        }]
+    }, {
+        "sectionname": "Sodas, Soft Drinks & More",
+        "sectionid": "softdrinks",
+        "sectionx1": "Pepsi, Diet Pepsi, Mug Root Beer, Dr. Pepper, Sierra Mist Twist, Lemonade, Fresh Brewed Tea, Bottled Water",
+        "img" : "img/coke.jpg",
+        "alt" : "Pepsi goes perfect with anything.",
+        "caption" : "Pepsi goes perfect with anything.",
+        "items": [{
+            "name": "12oz Glass",
+            "price": "$3.00"
+        }, {
+            "name": "Pitcher",
+            "price": "$8.50"
+        }, {
+            "name": "Refill",
+            "price": "$1.50"
+        }, {
+            "name": "Hot Coffee",
+            "price": "$2.50"
+        }, {
+            "name": "Hot Tea",
+            "price": "$2.50"
+        }, {
+            "name": "Hot Chocolate",
+            "price": "$2.50"
+        }]
+    }, {
+        "sectionname": "Wine",
+        "sectionid": "wine",
+        "img" : "img/wine.jpg",
+        "alt" : "Some gorgeous wine.",
+        "subsections": [{
+            "subsectionname": "Wine by the Bottle",
+            "items": [{
+                "name": "Pinot Grigio",
+                "price": "$23.00",
+                "description": "Terra de Oro"
+            }, {
+                "name": "Pinot Noir",
+                "price": "$21.00",
+                "description": "Seaglass"
+            }, {
+                "name": "Cabernet Sauvignon",
+                "price": "$24.00",
+                "description": "The Show"
+            }]
+        }, {
+            "subsectionname": "Wine by the Glass",
+            "items": [{
+                "name": "House Vendange",
+                "price": "$6.50",
+                "description": "Cabernet, Chardonnay, Sweet Moscato, or White Zinfandel"
+            }]
+        }]
+    }, {
+        "sectionname": "Sangrias",
+        "sectionid": "sangrias",
+        "sectionx1": "White Peach Mango or Traditional Red",
+        "img" : "img/sangria.jpg",
+        "alt" : "A cool fruity sangria.",
+        "caption" : "A cool fruity sangria.",
+        "items": [{
+            "name": "Carafe",
+            "price": "$20.00",
+            "description": ""
+        }, {
+            "name": "1/2 Carafe",
+            "price": "$13.00",
+            "description": ""
+        }, {
+            "name": "Glass",
+            "price": "$6.50",
+            "description": ""
+        }]
+    }, {
+        "sectionname": "Draft Beer",
+        "sectionid": "beer",
+        "sectionx1": "Bud Light, Amber Bock, Shock Top, Michelob Ultra, Seasonal Specialty",
+        "img" : "img/beer.jpg",
+        "alt" : "We have all of the best American beers.",
+        "caption" : "We have all of the best American beers.",
+        "items": [{
+            "name": "Mug",
+            "price": "$3.50"
+        }, {
+            "name": "1/2 Pitcher",
+            "price": "$7.50"
+        }, {
+            "name": "3/4 Pitcher",
+            "price": "$10.50"
+        }, {
+            "name": "Full Pitcher",
+            "price": "$12.50"
+        }]
+    }, {
+        "sectionname": "Desserts and Sweets",
+        "sectionid": "desserts",
+        "img" : "img/sundae.jpg",
+        "alt" : "You think you can turn down a sundae?!",
+        "caption" : "You think you can turn down a sundae?!",
+        "items": [{
+            "name": "Ultimate Hot Fudge Sundae",
+            "price": "$6.50"
+        }, {
+            "name": "Hot Fudge Brownie Sundae",
+            "price": "$6.50"
+        }, {
+            "name": "Root Beer Float",
+            "price": "$6.50"
+        }, {
+            "name": "Chocolate Chip Cake",
+            "price": "$6.50"
+        }, {
+            "name": "Sweet Treat of the Week",
+            "price": "$6.50"
+        }, {
+            "name": "Jr. Sweet Treat of the Week",
+            "price": "$4.50"
+        }]
+    }]
+}

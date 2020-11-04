@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Testing Google Spreadsheets + JSON + Mustache</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"  type="text/javascript"></script>	<!-- <link rel="stylesheet" href="css/css.css" /> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" type="text/javascript"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"></head>
+<style media="screen">
+	pre {
+		background: #ddd;
+		padding: 1em 2.5em;
+		border-left: #ccc 5px solid
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-8">
+				<h1>Mustache.js & Google Sheets for Dynamic Content</h1>
+				<div id="explanation">
+					<p>This is a proof of concept, using <a href="https://mustache.github.io/">Mustache.js</a>, and a Google Sheets document to populate a menu to be used on a local restaurant's website. This would allow the menu to be updated by a basic user without having to touch code at all.</p>
+					<p>The data is pulled in from <a href="https://docs.google.com/spreadsheets/d/1qb0RXGZMckzRs2ZvOUYims68s-NmVu4L2Ou5OkDoQsg/edit?usp=sharing">this</a> Google sheet in JSON format, then processed through a Mustache.js template:</p>
+					<pre><code>
+{{#feed}}
+  {{#entry}}
+   &lt;h2&gt;
+     {{#gsx$item}}
+      {{$t}}
+     {{/gsx$item}}
+   &lt;/h2&gt;
+   &lt;h3&gt;
+     {{#gsx$description}}
+      {{$t}}
+     {{/gsx$description}}
+   &lt;/h3&gt;
+   &lt;h4&gt;
+     {{#gsx$price}}
+      {{$t}}
+     {{/gsx$price}}
+   &lt;/h4&gt;
+  {{/entry}}
+{{/feed}}
+					</code></pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-xl-8">
+			<div id="coffeeBox" class="">
+				<p>no</p>
+			</div>
+			<div id="foodBox" class="">
+				<p>no</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script id="coffeeTemplate" type="text/template">
+<h1 class="display-2">Coffee</h1>
+
+{{#feed}}
+		{{#entry}}
+
+			<h2>{{#gsx$item}}
+						{{$t}}
+					{{/gsx$item}}
+			</h2>
+			<h3>{{#gsx$description}}
+						{{$t}}
+					{{/gsx$description}}
+			</h3>
+			<h4>{{#gsx$price}}
+						{{$t}}
+					{{/gsx$price}}
+			</h4>
+
+		{{/entry}}
+{{/feed}}
+
+	</script>
+
+	<script id="foodTemplate" type="text/template">
+<h1 class="display-2">Food</h1>
+
+{{#feed}}
+		{{#entry}}
+
+			<h2>{{#gsx$item}}
+						{{$t}}
+					{{/gsx$item}}
+			</h2>
+			<h3>{{#gsx$description}}
+						{{$t}}
+					{{/gsx$description}}
+			</h3>
+			<h4>{{#gsx$price}}
+						{{$t}}
+					{{/gsx$price}}
+			</h4>
+
+		{{/entry}}
+{{/feed}}
+
+	</script>
+
+
+	<script src="js/js.js" type="text/javascript"></script>
+
+
+	<!-- <div class="results"></div>
+
+<script>
+
+ // ID of the Google Spreadsheet
+ var spreadsheetID = "1qb0RXGZMckzRs2ZvOUYims68s-NmVu4L2Ou5OkDoQsg";
+
+ // Make sure it is public or set to Anyone with link can view
+ var url = "https://crossorigin.me/https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+
+ $.getJSON(url, function(data) {
+
+  var entry = data.feed.entry;
+
+  $(entry).each(function(){
+    // Column names are name, age, etc.
+    $('.results').prepend('<h2>'+this.gsx$item.$t+'</h2><p>'+this.gsx$description.$t+'</p>');
+  });
+
+ });
+
+</script> -->
+
+</div>
+</body>
+
+</html>
